@@ -6,7 +6,7 @@
 #    By: srusso-b <srusso-b@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/29 07:16:25 by srusso            #+#    #+#              #
-#    Updated: 2025/12/01 17:56:18 by srusso-b         ###   ########.fr        #
+#    Updated: 2025/12/06 19:35:12 by srusso-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,25 +16,22 @@
 
  CFLAGS	= -Wall -Werror -Wextra
 
- SRC	= ft_printf.c ft_utils.c ft_putnbr_base.c \
+ SRC	= ft_printf ft_utils ft_putnbr_base
 
- OBJ	= $(SRC:.c=.o)
+ RM		= rm -f
 
 
  all: $(NAME)
 
- $(NAME): $(OBJ)
-	 ar rcs $(NAME) $(OBJ)
+$(NAME): $(SRC:=.o)
+	ar rcs $(NAME) $(SRC:=.o)
 
- %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+clean:
+	$(RM) $(SRC:=.o)
 
- clean:
-	rm -f $(OBJ)
-	
- fclean:	clean
-	rm -f $(NAME)
-	
- re: fclean all
+fclean:	clean
+	$(RM) $(NAME)
 
-.PHONY: all clean fclean re 
+re: fclean all
+
+.PHONY: all clean fclean re

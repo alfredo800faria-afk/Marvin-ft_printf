@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stddef.h>
+# include <limits.h>
 
 int	ft_putchar_len(char c);
 int	ft_putstr_len(char *s);
