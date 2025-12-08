@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: srusso-b <srusso-b@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: srussso <srusso-b@student.42lisboa.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 07:14:23 by srusso            #+#    #+#             */
-/*   Updated: 2025/12/01 18:34:13 by srusso-b         ###   ########.fr       */
+/*   Updated: 2025/12/04 15:42:41 by srussso          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int main(void)
 	ft_printf("%d\n",
 	ft_printf("%x\n",
 	ft_printf("%X\n", 50000))));
-
+	
 	printf("%u\n", 
 	printf("%d\n",printf("%x\n", printf("%X\n", 50000))));
 	return (0);
