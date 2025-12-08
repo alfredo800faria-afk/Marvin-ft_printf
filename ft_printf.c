@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: srussso <srusso-b@student.42lisboa.com>    +#+  +:+       +#+        */
+/*   By: srusso-b <srusso-b@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 07:14:23 by srusso            #+#    #+#             */
-/*   Updated: 2025/12/04 15:42:41 by srussso          ###   ########.fr       */
+/*   Updated: 2025/12/08 08:45:18 by srusso-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,6 @@ int	ft_printf(const char *fmt, ...)
 	return (count);
 }
 /*
-#include <limits.h>
-
 int main(void)
 {
 	int nbr = INT_MAX;
@@ -81,7 +79,7 @@ int main(void)
 	ft_printf("%d\n",
 	ft_printf("%x\n",
 	ft_printf("%X\n", 50000))));
-	
+
 	printf("%u\n", 
 	printf("%d\n",printf("%x\n", printf("%X\n", 50000))));
 	return (0);
